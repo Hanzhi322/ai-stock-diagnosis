@@ -4,6 +4,8 @@
 
 **当前版本为公开公告快照研究。模型 Key 未配置时明确使用规则诊断；配置后启用在线 LLM 语义选维度和解读。不将规则结果冒充 AI 输出。**
 
+在线体验：[证研](https://zhengyan-evidence-workbench.zuhanzhizzz.chatgpt.site)。
+
 ## 目标用户与核心任务
 
 面向希望复核公司经营状态的个人研究者。输入“利润增长是否有现金流支撑”，得到现金流、归母利润、营运资本的交叉证据；点开证据可以看到报告页码、原值、单位、期间、公式、推断与待验证问题。
@@ -34,11 +36,11 @@ npm run dev
 
 ```dotenv
 LLM_API_KEY=你的密钥
-LLM_BASE_URL=https://api.deepseek.com
-LLM_MODEL=deepseek-flash
+LLM_BASE_URL=https://api.groq.com/openai/v1
+LLM_MODEL=qwen/qwen3.8-27b
 ```
 
-兼容 `/chat/completions` 协议；其他供应商请填写自己的 HTTPS base URL 与模型名，是否支持 `response_format: json_object` 以服务商文档为准。参考 [DeepSeek 官方接入文档](https://api-docs.deepseek.com/zh-cn/)。
+兼容 `/chat/completions` 协议；其他供应商请填写自己的 HTTPS base URL 与模型名，是否支持 `response_format: json_object` 以服务商文档为准。参考 [Groq 官方接入文档](https://console.groq.com/docs/overview)。
 
 线上环境需要另外配置相同的服务端变量。应用不会把本机密钥打包进源码或部署包。仅凭 `.env.local` 不会自动配置线上环境。调用费用由模型服务商收取。
 
@@ -75,9 +77,9 @@ LLM_MODEL=deepseek-flash
 - 未核验公告披露之后所有事件；分红方案不等同于已实施。
 - 不提供涨跌预测、收益承诺、买卖点或交易指令。
 - 没有自动抓取、回测、持仓、交易或跨设备收藏。核验标记只保存在本浏览器。
-- 模型真实调用必须使用用户配置的密钥验证；模拟测试通过不等于真实模型调用通过。
+- 已使用 Groq 完成真实模型请求验证。无 Key、上游异常或输出不合格时仍显示规则降级，验证记录见测试说明。
 - 无互联网的财报快照仍可研究；在线模型需要网络与可用余额。
-- 尚无生产级多租户配额、持久化速率限制或全量监控。带付费 Key 的公开发布前应增加用量保护；当前部署默认私有。
+- 尚无生产级多租户配额、持久化速率限制或全量监控。当前演示站已按所有者要求公开，模型账户额度由服务商管理；正式规模化运行前需要补充持久化用量控制。
 
 ## 验证
 
