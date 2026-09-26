@@ -93,6 +93,6 @@ Node 24 原生剥离 TypeScript 类型运行研究测试；接口测试通过已
 
 React / TypeScript / Vinext（Next.js 风格路由）/ Cloudflare Worker / Tailwind / Shadcn / Lucide。前端组件 `app/page.tsx`；诊断端点 `app/api/diagnose/route.ts`；纯计算与证据层 `lib/research.ts`。
 
-没有复制 `ZhuLinsen/daily_stock_analysis` 的代码。该项目是候选阶段的方向参考；本实现围绕证据核验重新编写，未直接复用其评分、买卖点和推送模块。参考：[daily_stock_analysis](https://github.com/ZhuLinsen/daily_stock_analysis)。依赖包保留各自许可证。
+应用围绕问题诊断、确定性指标计算和证据核验组织。各依赖包保留其许可证。
 
 AI 使用记录见 `docs/AI_USAGE.md`；演示顺序见 `docs/DEMO.md`。浏览器支持 WebMCP 时注册打开证据与执行诊断两个工具，直接调用相同的可见状态与动作。
