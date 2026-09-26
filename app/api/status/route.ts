@@ -1,0 +1,1 @@
+export async function GET(){return Response.json({modelConfigured:!!process.env.LLM_API_KEY,model:process.env.LLM_MODEL||null,dataMode:"verified-public-snapshot",snapshot:"catl-2026h1-v1"},{headers:{"Cache-Control":"no-store"}});}
