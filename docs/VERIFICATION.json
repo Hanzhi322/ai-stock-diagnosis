@@ -1,0 +1,114 @@
+{
+  "local": {
+    "testedAt": "2026-09-26T18:16:31.789Z",
+    "url": "https://zhengyan-evidence-workbench.zuhanzhizzz.chatgpt.site",
+    "tests": [
+      {
+        "target": "local",
+        "question": "利润增长是否有现金流支撑？请解释矛盾证据。",
+        "status": 200,
+        "providerStatus": 200,
+        "mode": "llm",
+        "model": "qwen/qwen3.8-27b",
+        "ids": [
+          "E01",
+          "E02",
+          "E05",
+          "E03"
+        ],
+        "notice": "AI 解读已通过结构与证据编号校验；数值由确定性引擎提供，解释仍需人工核验。",
+        "durationMs": 561
+      },
+      {
+        "target": "local",
+        "question": "当前估值是否合理，还缺少什么证据？",
+        "status": 200,
+        "providerStatus": 200,
+        "mode": "llm",
+        "model": "qwen/qwen3.8-27b",
+        "ids": [
+          "E04",
+          "E03"
+        ],
+        "notice": "AI 解读已通过结构与证据编号校验；数值由确定性引擎提供，解释仍需人工核验。",
+        "durationMs": 409
+      },
+      {
+        "target": "local",
+        "question": "储能业务的增长与毛利率变化是否一致？",
+        "status": 200,
+        "providerStatus": 200,
+        "mode": "llm",
+        "model": "qwen/qwen3.8-27b",
+        "ids": [
+          "E01",
+          "E03"
+        ],
+        "notice": "AI 解读已通过结构与证据编号校验；数值由确定性引擎提供，解释仍需人工核验。",
+        "durationMs": 491
+      }
+    ]
+  },
+  "online": {
+    "testedAt": "2026-09-26T18:18:43.951Z",
+    "url": "https://zhengyan-evidence-workbench.zuhanzhizzz.chatgpt.site",
+    "tests": [
+      {
+        "target": "online",
+        "question": "利润增长是否有现金流支撑？请解释矛盾证据。",
+        "status": 200,
+        "mode": "llm",
+        "model": "qwen/qwen3.8-27b",
+        "ids": [
+          "E01",
+          "E02",
+          "E05",
+          "E03"
+        ],
+        "notice": "AI 解读已通过结构与证据编号校验；数值由确定性引擎提供，解释仍需人工核验。",
+        "durationMs": 1559
+      },
+      {
+        "target": "online",
+        "question": "当前估值是否合理，还缺少什么证据？",
+        "status": 200,
+        "mode": "llm",
+        "model": "qwen/qwen3.8-27b",
+        "ids": [
+          "E04",
+          "E03"
+        ],
+        "notice": "AI 解读已通过结构与证据编号校验；数值由确定性引擎提供，解释仍需人工核验。",
+        "durationMs": 424
+      },
+      {
+        "target": "online",
+        "question": "储能业务的增长与毛利率变化是否一致？",
+        "status": 200,
+        "mode": "llm",
+        "model": "qwen/qwen3.8-27b",
+        "ids": [
+          "E01",
+          "E03"
+        ],
+        "notice": "AI 解读已通过结构与证据编号校验；数值由确定性引擎提供，解释仍需人工核验。",
+        "durationMs": 577
+      }
+    ]
+  },
+  "testedRuntimeCommit": "994870e3c8334eb2e57ea90387d67a8a09ce7ae2",
+  "automaticTests": {
+    "passed": 17,
+    "failed": 0
+  },
+  "typecheck": "passed",
+  "build": "passed",
+  "security": {
+    "checkedAt": "2026-09-26T18:19:00.713044+00:00",
+    "gitObjectsScanned": 180,
+    "workingFilesScanned": 113,
+    "envLocalIgnored": true,
+    "envLocalInHistory": false,
+    "findings": []
+  }
+}

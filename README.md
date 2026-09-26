@@ -4,7 +4,7 @@
 
 **当前版本使用公开公告快照与 Groq 在线模型，已完成线上真实请求验证。未配置密钥或模型调用失败时，界面明确显示规则降级。**
 
-在线体验：[证研](https://zhengyan-evidence-workbench.zuhanzhizzz.chatgpt.site)。
+在线体验：[证研](https://zhengyan-evidence-workbench.zuhanzhizzz.chatgpt.site) · 源码：[Hanzhi322/ai-stock-diagnosis](https://github.com/Hanzhi322/ai-stock-diagnosis)。
 
 ## 目标用户与核心任务
 
@@ -23,6 +23,8 @@
 Node.js 22.13+（测试使用 Node.js 24）与 npm。
 
 ```bash
+git clone https://github.com/Hanzhi322/ai-stock-diagnosis.git
+cd ai-stock-diagnosis
 npm ci
 cp .env.example .env.local
 npm run dev
@@ -97,4 +99,4 @@ React / TypeScript / Vinext（Next.js 风格路由）/ Cloudflare Worker / Tailw
 
 应用围绕问题诊断、确定性指标计算和证据核验组织。各依赖包保留其许可证。
 
-AI 使用记录见 `docs/AI_USAGE.md`；演示顺序见 `docs/DEMO.md`。浏览器支持 WebMCP 时注册打开证据与执行诊断两个工具，直接调用相同的可见状态与动作。
+提交清单见 `docs/SUBMISSION.md`；AI 使用记录见 `docs/AI_USAGE.md`；演示顺序见 `docs/DEMO.md`。浏览器支持 WebMCP 时注册打开证据与执行诊断两个工具，直接调用相同的可见状态与动作。
